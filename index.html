@@ -6,11 +6,21 @@
     <title>JavaScript Test</title>
 </head>
 <body>
-    <h1>Hello, JavaScript!</h1>
     <script>
-        for(let i = 1; i <= 100; i ++){
-            console.log(i);
-        }
-    </script>
+        const findMax = (arr) => {
+            //変数maxにarrの先頭を代入する
+            let max = arr[0];
+            //1から始まり、毎回1が+されながら配列arrの長さ未満までループを続ける
+            for(let i = 1; i < arr.length; i++){
+                //もし配列arrの値が配列0より配列1の方が大きい場合、配列arrに配列1を代入する
+                if(arr() < i){
+                    max = arr[i];
+                }
+            }
+
+            console.log(max);
+        };
+
+        findmax([12,6,25,8,17]);
 </body>
 </html>
